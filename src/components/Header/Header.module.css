@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+    padding: 120px 0;
+}
+.header .div-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 12px;
+}
+@media (max-width: 425px) {
+    .header {
+        padding: 52px 0;
+    }
+    .header .div-img img {
+        width: 90%;
+    }
+}
