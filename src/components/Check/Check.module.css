@@ -1,0 +1,166 @@
+.check {
+    position: relative;
+    width: 100%;
+    max-width: 840px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: var(--bg-color);
+    border-radius: 24px;
+    color: #fff;
+    margin: 32px 0;
+    margin-top: 120px;
+    padding: 42px 36px;
+}
+.check > img {
+    position: absolute;
+    top: -32px;
+    z-index: 1;
+    
+}
+.check > div {
+    width: 50%;
+    padding: 24px;
+}
+.check .border {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    padding: 0;
+    background: linear-gradient(270deg, #FFE100 0%, #FBAD18 47%, #EA6C20 100%);
+}
+.check h2 {
+    font-family: 'Oleo Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+}
+.check ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.check li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.check li img {
+    transform: translateY(10px);
+
+}
+.check li span {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 146.5%;
+}
+.check .aq {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+.check .aq > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.check .aq h3 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+} 
+.check .aq h4  {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+} 
+.check .aq span  {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    align-self: flex-end;
+} 
+.check .aq > div > div {
+    position: absolute;
+    left: -4px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+} 
+.check .last {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.check p {
+    width: 320px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 119.5%;
+}
+@media (max-width: 425px) {
+    .check {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 36px 0;
+        margin-top: 80px;
+        width: 90%;
+    }
+    .check > div {
+        width: 100%;
+    }
+    .check h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .check p{ 
+        font-size: 14px;
+    }
+    .check .border {
+        position: relative;
+        width: 100%;
+        height: 3px;
+        padding: 0;
+        background: linear-gradient(270deg, #FFE100 0%, #FBAD18 47%, #EA6C20 100%);
+    }
+    .check .aq > div {
+        align-items: center;
+    }
+    .check .aq > div h4 {
+    }
+    .check .aq h3 {
+        font-size: 20px;
+    } 
+    .check .aq h4  {
+        font-size: 40px;
+    } 
+    .check .aq span  {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        align-self: flex-end;
+    }
+    .check .aq > div > div {
+        position: absolute;
+        left: 8px;
+        top: 34px;
+    } 
+}
