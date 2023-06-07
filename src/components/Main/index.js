@@ -11,33 +11,71 @@ import styles from './Main.module.css'
 
 export default function Main() {
     const faq = [
-        {title: 'Preciso fazer reservas com antecedência?', text: ''},
-        {title: 'Para quais períodos é importante fazer reservas com antecedência?', text: ''},
-        {title: 'Para a alta temporada quanto tempo de antecedência eu preciso reservar?', text: ''},
-        {title: 'Quando faço a reserva já tenho que pagar?', text: ''},
-        {title: 'Para feriados preciso reservar com mais antecedências?', text: ''},
-        {title: 'Como pago a reserva?', text: ''},
-        {title: 'Como eu escolho o hotel e faço as reservas?', text: ''},
-        {title: 'Quais as datas da alta e da baixa temporada?', text: ''},
-        {title: 'Tem diferença nos preços de baixa e alta temporada?', text: ''},
-        {title: 'Posso reservar mais de um quarto ou apartamento?', text: ''},
-        {title: 'Posso parcelar minhas reservas?', text: ''},
-        {title: 'Quantas vezes por ano posso usar?', text: ''},
-        {title: 'Tem limites de utilização?', text: ''},
-        {title: 'Posso levar convidados?', text: ''},
-        {title: 'Quantas pessoas posso levar?', text: ''},
-        {title: 'Criança também paga?', text: ''},
-        {title: 'Nas Rede credenciada as diárias são o mesmo valor das unidades próprias?', text: ''},
-        {title: 'Sempre vai ter vaga para mim?', text: ''},
-        {title: 'Quem são os dependentes?', text: ''},
-        {title: 'Os dependentes podem viajar sozinhos?', text: ''},
-        {title: 'Posso alterar minha reserva?', text: ''},
-        {title: 'Tem café da manhã?', text: ''},
-        {title: 'Meus convidados pagam mais?', text: ''},
-        {title: 'Posso emprestar meu título?', text: ''},
-        {title: 'Posso levar quem eu quiser?', text: ''},
-        {title: 'Posso mandar convidados sozinhos?', text: ''},
-        {title: 'Posso levar pets?', text: ''},
+        {title: 'Preciso fazer reservas com antecedência?', text: 'A reservas são por ordem de chegada. Não existe tempo mínimo para fazer reservas. Depende apenas da disponibilidade de vagas no período para a unidade escolhida. A antecipação da reserva e programação da viajem é sempre bem-vinda.'},
+        {title: 'Para quais períodos é importante fazer reservas com antecedência?', text: 'Os períodos de alta temporada, feriados nacionais e eventos programados são sempre bem procurados.A Rede Candeias faz reservas para as unidades por ordem de chegada. Não existe tempo mínimo para fazer reservas. Depende apenas da disponibilidade de vagas. '},
+        {title: 'Para a alta temporada quanto tempo de antecedência eu preciso reservar?', text: 'As reservas são por ordem de chegada. Sugerimos mínimo de 90 dias de antecedência para o mês de janeiro dependendo da unidade. Para o réveillon é necessário reservar no primeiro semestre. (Lembrando que toda a rede hoteleira do país tem 100% de lotação nesse período) O ideal é no mês de março. Dia 15/março é o dia oficial de abertura de reservas para a alta temporada. Desde então é possível reservar e garantir suas férias inclusive o Candeias parcelas as diárias em até 12 vezes sem juros. Não existe tempo mínimo para fazer reservas. Depende apenas da disponibilidade de vagas no período para a unidade escolhida.'},
+        {title: 'Quando faço a reserva já tenho que pagar?', text: `Sim. No momento da reserva já é feito o pagamento que pode ser parcelado em até 12 vezes. `},
+        {title: 'Para feriados preciso reservar com mais antecedências?', text: `Os períodos de alta temporada, feriados nacionais e eventos programados são sempre bem procurados. 
+        Sugerimos para mês de janeiro mínimo de 90 dias
+        Feriados mínimo de 30 dias, réveillon logo que abrirem as reservas que acontece no dia 15/março.
+        A Rede Candeias faz reservas para as unidades por ordem de chegada. 
+        Não existe tempo mínimo para fazer reservas. Depende apenas da disponibilidade de vagas. `},
+        {title: 'Como pago a reserva?', text: `As diárias podem ser pagas com cartão de crédito em até 12 vezes sem juros ou pix ou transferência bancária.
+        `},
+        {title: 'Como eu escolho o hotel e faço as reservas?', text: `Pode ser pelo aplicativo que você baixa no seu celular, ali você tem todas as informações do hotel, fotos, tipos de quartos, tipos de cama, pode entrar nos quartos, no banheiro, localização, o que tem perto, área de lazer, valor por pessoa, o que levar, etc...  pode fazer a reserva direto no app ou pelo 0800 0072252,  ou pelo site www.clubecandeias.com.br ou ainda nas lojas físicas com atendimento pessoal.
+        `},
+        {title: 'Quais as datas da alta e da baixa temporada?', text: `Alta temporada é de 20/12 até 24/01
+        Baixa temporada de 01/03 até 19/12
+        Média temporada de 26/01 até 28/02 e feriados nacionais
+        Baixíssima temporada de 02/05 até 31/08 pernoites de domingo a quinta feira exceto feriados e mês de julho.
+        Altíssima temporada de 26/12 até 04/01.`},
+        {title: 'Tem diferença nos preços de baixa e alta temporada?', text: `Os preços podem variar devido a alta procura.
+        Alta temporada é de 20/12 até 24/01 (duração aproximada de um mê)
+        Baixa temporada de 01/03 até 19/12 (quase o ano inteiro)
+        Média temporada de 26/01 até 28/02 e feriados nacionais
+        Baixíssima temporada de 02/05 até 31/08 pernoites de domingo a quinta feira exceto feriados e mês de julho. (30% mais barato que na baixa temporada)
+        Altíssima temporada de 26/12 até 04/01.`},
+        {title: 'Posso reservar mais de um quarto ou apartamento?', text: `Cada cota do Clube Candeias dá direito a um aposento, seja quartos de hotel ou apartamento mobilado. 
+        Por isso o Candeias tem títulos com uma, duas, três e quatro cotas. Tem associado que passa janeiro inteiro na praia, só volta depois do carnaval...
+        `},
+        {title: 'Posso parcelar minhas reservas?', text: `Sim. As reservas podem ser parceladas no cartão de crédito em até 12 vezes sem juros. Só não reserva fiado...
+        `},
+        {title: 'Quantas vezes por ano posso usar?', text: `Nas unidades próprias a utilização é livre de 01/março a 19/dezembro e restrita a um pacote de 7 diárias no período de 20/dezembro até o carnaval.
+        Nas unidades da rede credenciada a utilização é livre. Vai viajar até enjoar...`},
+        {title: 'Tem limites de utilização?', text: `Nas unidades próprias a utilização é livre de 01/março a 19/dezembro e restrita a um pacote de 7 diárias no período de 20/dezembro até o carnaval.
+        Nas unidades da rede credenciada a utilização é livre. Vai ser de enjoar...`},
+        {title: 'Posso levar convidados?', text: `Sim. Você pode levar quem quiser como convidado até o limite da capacidade do aposento escolhido. E seu convidado paga o mesmo valor de associado. Sem taxas extras.
+        `},
+        {title: 'Quantas pessoas posso levar?', text: `Nós temos aposentos até para 10 pessoas.
+        Você pode levar a quantidade de convidados de acordo com a capacidade do aposento escolhido. Não é permitido levar excedentes. (mais do que o aposento acomoda)
+        `},
+        {title: 'Criança também paga?', text: `Elas usam, mas só pagam a partir dos 5 anos.`},
+        {title: 'Nas Rede credenciada as diárias são o mesmo valor das unidades próprias?', text: `O preço das diárias variam de hotel para hotel.
+        `},
+        {title: 'Sempre vai ter vaga para mim?', text: `A Rede Candeias funciona como qualquer hotel as reservas são feitas por ordem de chegada. 
+        Sugerimos mínimo de 90 dias de antecedência para o mês de janeiro dependendo da unidade.
+        Para o réveillon é necessário reservar no primeiro semestre, como qualquer hotel no Brasil. (Lembrando que toda a rede hoteleira do país tem 100% de lotação nesse período)
+        Dia 15/março é o dia oficial de abertura de reservas para a alta temporada. Desde então é possível reservar e garantir suas férias, inclusive o Candeias parcelas as diárias em até 12 vezes sem juros.
+        Não existe tempo mínimo para fazer reservas. Depende apenas da disponibilidade de vagas no período para a unidade escolhida.`},
+        {title: 'Quem são os dependentes?', text: `Todos os legais. Cônjuge, filhos solteiros até 24 anos e pais do titular. Sogro e sogra não...
+        Se for solteiro pode incluir irmãos menores de 18 anos. Pode também incluir a noiva ou namorada, embora eu não aconselhe.
+        `},
+        {title: 'Os dependentes podem viajar sozinhos?', text: `Sim. Inclusive podem levar convidados. Mas o pai vai ficar sabendo.
+        `},
+        {title: 'Posso alterar minha reserva?', text: `Claro que sim! O Clube é seu. Conforme Regulamento Geral de Reservas.
+        `},
+        {title: 'Tem café da manhã?', text: `Em todos os hotéis o café da manhã já está incluso. E são de altíssima qualidade!
+        `},
+        {title: 'Meus convidados pagam mais?', text: `Não, os convidados pagam o mesmo valor que você associado.
+        `},
+        {title: 'Posso emprestar meu título?', text: `Não.`},
+        {title: 'Posso levar quem eu quiser?', text: `Sim, desde que seja uma pessoa legal!! Mas sempre na presença do associado ou dependente.
+        `},
+        {title: 'Posso mandar convidados sozinhos?', text: `Não, o convidado só pode utilizar na presença do associado ou dependente. 
+        Você pode indicar seu amigo para se tornar associado e ganhar um bônus em diárias.
+        `},
+        {title: 'Posso levar pets?', text: `Sim, quase todas as unidades aceitam nossos amiguinhos.
+        `},
     ]
 
     return (

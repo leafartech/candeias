@@ -5,7 +5,6 @@ export default function Dropdown({ liDrowdown, dropdownId, pills }) {
     const [ activeDropdown, setActiveDropdown ] = useState([])
 
     function dropdownActive(event) {
-        // console.log(event.target.id)
         let dropdownElement = document.querySelector(`#dropdown-text-${event.target.id}`)
 
         if (activeDropdown.length > 0) {
