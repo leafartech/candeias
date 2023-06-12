@@ -1,0 +1,23 @@
+:root {
+    --title-color: #12447D;
+    --normal-color: #fff;
+    --bg-color: #12447D;
+    --bg2-color: #d9d9d9;
+    --size-big: 48px;
+    --size-bg: 40px;
+    --size-medium: 24px;
+    --size-md: 20px;
+    --size-normal: 18px;
+    --size-small: 16px
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.dropdownActived {
+    position: relative!important;
+    opacity: 1!important;
+    z-index: 1!important;
+    transition: 500ms;
+  }
