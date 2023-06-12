@@ -247,9 +247,6 @@ export default function Main() {
                     <Check second={true} />
                 </Section>
                 <Section>
-                    <div id="forms" style={{ display: 'flex', alignItems: 'center'}}></div>
-                </Section>
-                <Section>
                     <div className={ styles['text-bg']}>
                         <h3>FAQ</h3>
                         <Text main="Perguntas Frequentes"></Text>
