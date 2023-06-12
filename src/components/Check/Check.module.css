@@ -141,6 +141,9 @@
         margin-top: 80px;
         width: 90%;
     }
+    .second {
+        margin-top: 0!important;
+    }
     .check .aq h4::after {
         content: "(R$4.719)";
         position: absolute;
