@@ -23,6 +23,17 @@
 .head {
     padding-left: 12px;
 }
+.link {
+    background: linear-gradient(180deg, #FFE100 -0.3%, #FFDA00 8.68%, #FFD400 16.67%, #FFCD03 21.66%, #FFC709 25.66%, #FBAD18 46.62%, #F7941D 67.59%, #EF7F1F 83.56%, #EA6C20 99.53%);
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    padding: 12px 24px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 24px;
+    cursor: pointer;
+}
 @media (max-width: 1024px) {
     .hero-flex {
         justify-content: center;

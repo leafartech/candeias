@@ -13,8 +13,9 @@
     padding: 42px 36px;
 }
 .second {
-    background: radial-gradient(100% 353.59% at 100% 0%, #FFFFFF 0%, #B4B4B4 100%);
-    color: var(--title-color);
+    /* background: radial-gradient(100% 353.59% at 100% 0%, #FFFFFF 0%, #B4B4B4 100%); */
+    background: var(--bg-color);
+    color: #fff;
     margin-top: 0;
 }
 .check > img {
@@ -142,7 +143,7 @@
         width: 90%;
     }
     .second {
-        margin-top: 0!important;
+        margin-top: 0!important
     }
     .check .aq h4::after {
         content: "(R$4.719)";

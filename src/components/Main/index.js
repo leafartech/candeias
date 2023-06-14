@@ -129,7 +129,7 @@ export default function Main() {
                     </div>
                 </Section>
                 <Section pd={true}>
-                    <HeroFlex buttonClicked={e => buttonClicked(e)} arr={true} main="Como funciona o Clube Candeiras?" subtitle={['O Candeias é uma Rede de Hospedagem SEM FINS LUCRATIVOS, você se associa uma única vez e se torna sócio para SEMPRE. E por isso o valor das hospedagens são tão em conta!', 'Tornando-se associado, você terá direito a férias vitalícias!', `Nossos hotéis são exclusivos para os Associados, nos melhores pontos turísticos do Brasil e do mundo.`, `Você viaja quantas vezes quiser durante o ano todo e ainda pode levar seus convidados sem taxas extras.`]}>
+                    <HeroFlex link={true} arr={true} main="Como funciona o Clube Candeiras?" subtitle={['O Candeias é uma Rede de Hospedagem SEM FINS LUCRATIVOS, você se associa uma única vez e se torna sócio para SEMPRE. E por isso o valor das hospedagens são tão em conta!', 'Tornando-se associado, você terá direito a férias vitalícias!', `Nossos hotéis são exclusivos para os Associados, nos melhores pontos turísticos do Brasil e do mundo.`, `Você viaja quantas vezes quiser durante o ano todo e ainda pode levar seus convidados sem taxas extras.`]}>
                     <div className={ styles['div-img']}>
                         <img src="./images/work.png" alt="Como funciona o Clube Candeias?" className={ styles.img } />
                         <img src="./images/abs.png" alt="Como funciona o Clube Candeias?" className={ styles.abs }/>
@@ -165,7 +165,7 @@ export default function Main() {
                                 <p style={{ marginBottom: '12px'}}>🎡 Parcerias de lazer: descontos em atrações turísticas, parques, museus e eventos.</p>
                             </Text>
                         </div>
-                        <Button buttonClicked={e => buttonClicked(e)} pd={ true } path="/">Quero participar do Clube Candeias</Button>
+                        <Button link={true} pd={ true } path="/">Quero participar do Clube Candeias</Button>
                     </div>
                 </Section>
                 <Section bg={true} pd={true}>
@@ -175,7 +175,13 @@ export default function Main() {
                         <img className={ styles.wpp } src="./images/testmonials/2.png" alt="Avaliação/Feedback de cliente" />
                         <img className={ styles.wpp } src="./images/testmonials/3.png" alt="Avaliação/Feedback de cliente" />
                     </div>
+                    <div className={ styles.checksec}>
+                        <Text bg={true} main="Em um ano o investimento do título já se paga!"></Text>
+                        <Check second={true} />
+                    </div>
+                    <span id="preco"></span>
                     <Check />
+                    <Button buttonClicked={buttonClicked}>Quero participar do Clube Candeias</Button>
                 </Section>
                 <Section bottom={true} pd={true}>
                     <Text main="O que a mídia diz sobre o Clube Candeias"></Text>
@@ -242,12 +248,8 @@ export default function Main() {
                     </div>
                     </HeroFlex>
                 </Section>
+                <div id="forms" style={{ display: 'flex', alignItems: 'center'}}></div>
                 <Section>
-                    <Text main="Em um ano o investimento do título já se paga!"></Text>
-                    <Check second={true} />
-                </Section>
-                <Section>
-                    <div id="forms"></div>
                     <div className={ styles['text-bg']}>
                         <h3>FAQ</h3>
                         <Text main="Perguntas Frequentes"></Text>

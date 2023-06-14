@@ -18,7 +18,7 @@ export default function Comparison({children, text, ok, buttonClicked}) {
                     </div>
                 ))}
                 {ok ?
-                <Button buttonClicked={buttonClicked}>Quero participar do Clube Candeias</Button>
+                <Button link={true}>Quero participar do Clube Candeias</Button>
                 : ''}
             </div>
         </div>
