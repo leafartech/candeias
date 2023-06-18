@@ -108,7 +108,7 @@ export default function Main() {
                             Com piscina adulto e infantil, toboágua, sala de jogos, quadra de vôlei e de futebol de areia – a partir de R$55,00 por pessoa com café da manhã. 
                         </Card>
                         <Card city="Gramado" path="4">
-                            Diárias a partir de R$ 65 reais
+                            Diárias a partir de R$ 103,25* por pessoa! A unidade possui: café da Manhã, estacionamento, internet wi-Fi, piscina, sala de Jogos.
                         </Card>
                         <Card city="Village do Sol em Natal/RN" path="6">
                             Um hotel 5 estrelas. Fica em um bosque de coqueiros. A unidade possui quartos de hotel e também 27 chalés. Com diárias Diária a partir de R$69 reais
