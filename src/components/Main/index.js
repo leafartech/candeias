@@ -78,18 +78,23 @@ export default function Main() {
     
     function buttonClicked(e) {
         setModal(!modal)
-        const script = document.createElement('script');
-            script.src = 'https://rafaeltramontin98.activehosted.com/f/embed.php?id=3';
-            script.type = 'text/javascript';
-            script.charset = 'utf-8';
-
-            document.getElementById('forms').appendChild(script)
+        
             // cont ++
             return () => {
             };
     }
+    let cont = 0
     useEffect(() => {
-    }, [modal])
+        if (cont === 0) {
+            const script = document.createElement('script');
+            script.src = 'https://rafaeltramontin98.activehosted.com/f/embed.php?id=7';
+            script.type = 'text/javascript';
+            script.charset = 'utf-8';
+    
+            document.getElementById('forms').appendChild(script)
+            cont ++
+        }
+    }, [])
 
     return (
         <>
