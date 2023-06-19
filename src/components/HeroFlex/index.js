@@ -19,7 +19,7 @@ export default function HeroFlex({head, children, main, subtitle, img, arr, butt
                     }
                 </Text>
                 { link ?
-                <a href="#preco" className={ styles.link }>Quero participar do Clube Candeias</a>
+                <a href="#cadastro" className={ styles.link }>Quero participar do Clube Candeias</a>
                 : 
                 <Button path="" buttonClicked={buttonClicked}>Quero participar do Clube Candeias</Button>
                 }

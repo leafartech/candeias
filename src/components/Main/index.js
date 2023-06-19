@@ -91,7 +91,7 @@ export default function Main() {
             script.type = 'text/javascript';
             script.charset = 'utf-8';
     
-            document.getElementById('forms').appendChild(script)
+            document.getElementById('cadastro').appendChild(script)
             cont ++
         }
     }, [])
@@ -184,9 +184,8 @@ export default function Main() {
                         <Text bg={true} main="Em um ano o investimento do título já se paga!"></Text>
                         <Check second={true} />
                     </div>
-                    <span id="preco"></span>
                     <Check />
-                    <Button buttonClicked={buttonClicked}>Quero participar do Clube Candeias</Button>
+                    <Button link={true}>Quero participar do Clube Candeias</Button>
                 </Section>
                 <Section bottom={true} pd={true}>
                     <Text main="O que a mídia diz sobre o Clube Candeias"></Text>
@@ -247,13 +246,12 @@ export default function Main() {
                 </Section>
                 <Section>
                     <img src="./images/logo4.png" alt="Logo Clube Candeiras" className={ styles.logoBg } />
-                    <HeroFlex buttonClicked={e => buttonClicked(e)}  main="Quem nós somos" arr={true} subtitle={['O Clube Candeias começou em 1968, quando inauguramos nossa primeira unidade em Santa Catarina, na cidade de Piçarras. No verão daquele mesmo ano, inúmeras famílias se associaram e se hospedaram nesta primeira unidade, marcando o início do sucesso e aceitação da nossa proposta.', 'Hoje, o Clube Candeias conta com dezenas de unidades próprias, oferecendo os preços mais competitivos do mercado, concretizando viagens e férias maravilhosas para centenas de milhares de famílias associadas!', 'O Clube Candeias busca inovar sempre, rompendo as barreiras do Brasil e alcançando o mundo inteiro! O portal do associado oferece uma rede com mais de 500 mil opções de hospedagens distribuídas pelos cinco continentes. Além disso, nossos associados contam também com um aplicativo exclusivo que permite realizar reservas e acessar os serviços do clube pelo celular.']}>
+                    <HeroFlex link={true} main="Quem nós somos" arr={true} subtitle={['O Clube Candeias começou em 1968, quando inauguramos nossa primeira unidade em Santa Catarina, na cidade de Piçarras. No verão daquele mesmo ano, inúmeras famílias se associaram e se hospedaram nesta primeira unidade, marcando o início do sucesso e aceitação da nossa proposta.', 'Hoje, o Clube Candeias conta com dezenas de unidades próprias, oferecendo os preços mais competitivos do mercado, concretizando viagens e férias maravilhosas para centenas de milhares de famílias associadas!', 'O Clube Candeias busca inovar sempre, rompendo as barreiras do Brasil e alcançando o mundo inteiro! O portal do associado oferece uma rede com mais de 500 mil opções de hospedagens distribuídas pelos cinco continentes. Além disso, nossos associados contam também com um aplicativo exclusivo que permite realizar reservas e acessar os serviços do clube pelo celular.']}>
                     <div className={ `${styles.last} ${styles['div-img']}`}>
                         <img src="./images/logo3.png" alt="Como funciona o Clube Candeias?" />
                     </div>
                     </HeroFlex>
                 </Section>
-                <div id="forms" style={{ display: 'flex', alignItems: 'center'}}></div>
                 <Section>
                     <div className={ styles['text-bg']}>
                         <h3>FAQ</h3>
@@ -261,6 +259,7 @@ export default function Main() {
                     </div>
                     <Dropdown liDrowdown={faq} />
                 </Section>
+                <div id="cadastro" style={{ display: 'flex', alignItems: 'center'}}></div>
             </main>
         </>
     )
