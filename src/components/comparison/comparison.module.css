@@ -1,0 +1,60 @@
+.comparison {
+    width: 440px;
+    padding: 52px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    background: linear-gradient(160.29deg, rgba(255, 255, 255, 0.5) -0.35%, rgba(0, 0, 0, 0.5) 89.81%);
+    backdrop-filter: blur(8.77651px);
+}
+.comparison.ok {
+    background: linear-gradient(180deg, #FFE100 -0.3%, rgba(251, 173, 24, 0.8) 25.18%, rgba(234, 108, 32, 0.5) 99.53%);
+    backdrop-filter: blur(8.77651px);
+}
+.comparison .comparisonIcon {
+    position: absolute;
+    left: -56px;
+}
+.comparison img {
+    margin-bottom: 24px
+}
+.comparison .body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.comparison .text {
+    display: flex;
+    gap: 8px;
+}
+.comparison h5 {
+    font-family: 'Oleo Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+}
+.comparison p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+}
+@media (max-width: 425px) {
+    .comparison {
+        max-width: 95%;
+        padding: 56px 24px;;
+    }
+    .comparison .comparisonIcon {
+        position: absolute;
+        left: auto;
+        right: auto;
+        top: -60px;
+    }
+}
