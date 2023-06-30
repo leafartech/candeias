@@ -37,6 +37,7 @@
     align-items: flex-start;
     border-radius: 16px;
     background-color: var(--bg-color);
+    margin-bottom: 24px;
 }
 .second-card .img {
     width: 100%;
